@@ -10,21 +10,14 @@ It works like a multi-agent development team that transforms natural language re
 - Fast Prototyping → Build web apps, APIs, or scripts from natural language prompts.
 
 ## Architecture
-User Prompt
-   │
-   ▼
-Planner Agent → Architect Agent → Coder Agent
-   │
-   ▼
-Generated Project (file-by-file, with real workflows)
+User Prompt **--->** Planner Agent → Architect Agent → Coder Agent **--->** Generated Project (file-by-file, with real workflows)
 
 ## Installation
-
 ### Prerequisites
 - anaconda installed (for environment management)
 - A Groq account and API key
 
-## Setup
+### Setup
 1. Create and activate virtual environment
 2. Install dependencies - pip install -r requirements.txt 
 3. Add your API keys in .env
