@@ -1,0 +1,12 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "A simple web-based calculator supporting basic arithmetic operations and real-time display.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npx live-server src"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

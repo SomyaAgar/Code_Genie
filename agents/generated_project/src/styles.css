@@ -1,0 +1,135 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Calculator container */
+.calculator {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display */
+#display {
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    font-size: 2rem;
+    text-align: right;
+    min-height: 50px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #d0d0d0;
+}
+
+button:active {
+    background: #c0c0c0;
+}
+
+/* Optional: differentiate operator and special buttons */
+.operator {
+    background: #ff9500;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #e08e00;
+}
+
+.operator:active {
+    background: #c27b00;
+}
+
+#clear {
+    background: #ff3b30;
+    color: #fff;
+}
+
+#clear:hover {
+    background: #e02f25;
+}
+
+#clear:active {
+    background: #c2271e;
+}
+
+#equals {
+    background: #34c759;
+    color: #fff;
+}
+
+#equals:hover {
+    background: #2bb54e;
+}
+
+#equals:active {
+    background: #26a444;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #display {
+        font-size: 1.5rem;
+        padding: 10px;
+        min-height: 40px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.2rem;
+        min-height: 48px; /* Ensure minimum touch target */
+        min-width: 48px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
